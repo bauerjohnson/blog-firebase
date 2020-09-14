@@ -6,9 +6,9 @@ import { signup } from '../../store/action/authaction';
 class signupauth extends Component {
     state = {
     email : '',
-    password: "",
-    firstname:"",
-    lastname:'',
+    password: '',
+    firstName:'',
+    lastName:'',
     }
     handlechange = (e) => {
       this.setState({[e.target.id] : e.target.value

@@ -17,6 +17,10 @@
   firebase.initializeApp(firebaseConfig);
   //firebase.analytics();
 
+  const config = {
+    userProfile: 'users', // where profiles are stored in database
+  }
+
   //firebase.firestore().settings({ timestampsInSnapshots : true })
 
   export default firebase;

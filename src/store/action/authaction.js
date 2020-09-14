@@ -36,7 +36,7 @@ export const signup = (newUser) => {
         ).then((resp) => {
             return firestore.collection('users').doc(resp.user.uid).set({
                 firstName : newUser.firstName,
-                lastName : newUser.lastName,
+                 lastName : newUser.lastName,
                 initials : newUser.firstName[0] + newUser.lastName[0]
             })
         }).then(() => {
@@ -46,3 +46,20 @@ export const signup = (newUser) => {
         })
     }
 }
+
+// firebase.auth().onAuthStateChanged(function(user) {
+//     if (user) {
+//       // User is signed in.
+//       var displayName = user.displayName;
+//       var email = user.email;
+//       var emailVerified = user.emailVerified;
+//       var photoURL = user.photoURL;
+//       var isAnonymous = user.isAnonymous;
+//       var uid = user.uid;
+//       var providerData = user.providerData;
+//       // ...
+//     } else {
+//       // User is signed out.
+//       // ...
+//     }
+//   });email-password.html
