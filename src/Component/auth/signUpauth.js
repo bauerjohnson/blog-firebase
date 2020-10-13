@@ -37,14 +37,14 @@ class signupauth extends Component {
                <input type= "password" id = "password" onChange = {this.handlechange}/>
 
                <div className = "input-field">
-               <label htmlFor = "firstname">firstname</label>
-               <input type= "text" id = "firstname" onChange = {this.handlechange}/>
+               <label htmlFor = "firstName">firstname</label>
+               <input type= "text" id = "firstName" onChange = {this.handlechange}/>
 
                </div>
 
                <div className = "input-field">
-               <label htmlFor = "lastname">lastname</label>
-               <input type= "text" id = "lastname" onChange = {this.handlechange}/>
+               <label htmlFor = "lastName">lastname</label>
+               <input type= "text" id = "lastName" onChange = {this.handlechange}/>
 
                </div>
                <div className = "input-field">

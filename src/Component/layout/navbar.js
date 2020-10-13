@@ -28,7 +28,7 @@ const mapstatetoprops = (state) => {
     return {
     auth : state.firebase.auth,
     profile : state.firebase.profile
-    }
+    }  
 }
 export default connect(mapstatetoprops)(Navbar);
 
